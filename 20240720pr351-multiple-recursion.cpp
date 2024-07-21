@@ -1,6 +1,7 @@
 // ruler.cpp -- использование рекурсии для разделения линейки
 #include <iostream>
 
+
 const int Len = 66;
 const int Divs = 6;
 
