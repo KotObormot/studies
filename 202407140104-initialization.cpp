@@ -8,4 +8,5 @@ int main() {
 	int e = {5}; //C++11
 	int f {};
 	std::cout << a << " " << b << " " << c << " " << d << " " << e << " " << f <<  "\n";
+    std::cout << sizeof(a) << "\n";
 }

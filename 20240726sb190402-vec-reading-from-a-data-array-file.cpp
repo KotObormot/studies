@@ -6,15 +6,15 @@ int main() {
     std::ifstream bank;
     std::string sourceFile;
     std::cout << "source file --> ";
-    while(!bank.is_open()) {
-        std::cin >> sourceFile;
-        bank.open("./data/" + sourceFile);
+    /*while(!bank.is_open()) {
+        std::cin >> sourceFile;*/
+        bank.open("./data/bank2.txt");
         if(!bank.is_open()) {
             std::cerr << "Error opening file. Please type the correct file name --> ";
         } else {
             std::cout << "File opened.\n";
         }
-    }
+   /*}*/
     std::vector<double> purse; // максимально возможное число элементов массива неизвестно
     double sum = 0;
     while(!bank.eof()) {

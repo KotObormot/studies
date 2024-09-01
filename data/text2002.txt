@@ -1,0 +1,6 @@
+-21.0 true
+-18.5     sunny
+ -9.0    cloudy
+ +0.0     windy
+ +5.3     snowy
++10.0    stormy
