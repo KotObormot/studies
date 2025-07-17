@@ -7,7 +7,7 @@ bool isDateFormat(std::string& date) {
     if(date.find('.') == std::string::npos) {
 // Если строка или символ не найдены, то возвращается специальная константа std::string::npos, 
         isDateCorrect = false;
-        std::cerr << "Not found\n";
+        //std::cerr << "Not found\n";
         return isDateCorrect;
     }
     //std::cout << ".posDD= " << date.find('.') << "\n";

@@ -1,0 +1,222 @@
+Hello!
+Created forest-> 0x7fff3cdb9920
+Created Branch-> 0x630c27f206c0
+There are 2 trees in the elven village.
+Created Branch-> 0x630c27f20710
+That one matches tree #0-> 0x630c27f20710
+Tree # 0 has 2 large branches.
+        0.0: What is the elf's name?--> 
+Created Branch-> 0x630c27f20780
+That one matches large branch #0.0-> 0x630c27f20780
+        Large branch # 0 has 2 middle branches.
+                0.0.0: What is the elf's name?--> 
+Created Branch-> 0x630c27f207f0
+That one matches middle branch #0.0.0-> 0x630c27f207f0
+                0.0.1: What is the elf's name?--> 
+Created Branch-> 0x630c27f20860
+That one matches middle branch #0.0.1-> 0x630c27f20860
+        0.1: What is the elf's name?--> 
+Created Branch-> 0x630c27f208d0
+That one matches large branch #0.1-> 0x630c27f208d0
+        Large branch # 1 has 2 middle branches.
+                0.1.0: What is the elf's name?--> 
+Created Branch-> 0x630c27f20920
+That one matches middle branch #0.1.0-> 0x630c27f20920
+                0.1.1: What is the elf's name?--> 
+Created Branch-> 0x630c27f20970
+That one matches middle branch #0.1.1-> 0x630c27f20970
+Created Branch-> 0x630c27f209e0
+That one matches tree #1-> 0x630c27f209e0
+Tree # 1 has 2 large branches.
+        1.0: What is the elf's name?--> 
+Created Branch-> 0x630c27f20a30
+That one matches large branch #1.0-> 0x630c27f20a30
+        Large branch # 0 has 2 middle branches.
+                1.0.0: What is the elf's name?--> 
+Created Branch-> 0x630c27f20a80
+That one matches middle branch #1.0.0-> 0x630c27f20a80
+                1.0.1: What is the elf's name?--> 
+Created Branch-> 0x630c27f20af0
+That one matches middle branch #1.0.1-> 0x630c27f20af0
+        1.1: What is the elf's name?--> 
+Created Branch-> 0x630c27f20b60
+That one matches large branch #1.1-> 0x630c27f20b60
+        Large branch # 1 has 2 middle branches.
+                1.1.0: What is the elf's name?--> 
+Created Branch-> 0x630c27f20bb0
+That one matches middle branch #1.1.0-> 0x630c27f20bb0
+                1.1.1: What is the elf's name?--> 
+Created Branch-> 0x630c27f20c00
+That one matches middle branch #1.1.1-> 0x630c27f20c00
+--------------------------------------------------------
+Created 16
+
+0x7fff3cdb9920
+
+Deleted forest-> 0x7fff3cdb9920
+Deleted branch-> 0x630c27f206c0 : 0x630c27f20710
+Deleted branch-> 0x630c27f20710 : 0x630c27f20780
+Deleted branch-> 0x630c27f20780 : 0x630c27f207f0
+Deleted branch-> 0x630c27f20780 : 0x630c27f20860
+Deleted branch-> 0x630c27f20710 : 0x630c27f208d0
+Deleted branch-> 0x630c27f208d0 : 0x630c27f20920
+Deleted branch-> 0x630c27f208d0 : 0x630c27f20970
+Deleted branch-> 0x630c27f206c0 : 0x630c27f209e0
+Deleted branch-> 0x630c27f209e0 : 0x630c27f20a30
+Deleted branch-> 0x630c27f20a30 : 0x630c27f20a80
+Deleted branch-> 0x630c27f20a30 : 0x630c27f20af0
+Deleted branch-> 0x630c27f209e0 : 0x630c27f20b60
+Deleted branch-> 0x630c27f20b60 : 0x630c27f20bb0
+Deleted branch-> 0x630c27f20b60 : 0x630c27f20c00
+---------------------------------------------------------
+Deleted 16
+
+itsme@itsme-PRIME-H510M-K-R2-0:~/studies/20250504ai270403-elven-village-vec/bin/src$ 
+=======================================================================================
+Hello!
+Created forest-> 0x7ffc787c6750		That one matches forest -> 0x7ffc787c6750		Deleted forest-> 0x7ffc787c6750		
+Created Branch-> 0x5dfce0c3a6c0		That one matches root -> 0x5dfce0c3a6c0			Deleted branch-> 0x5dfce0c3a6c0
+There are 5 trees in the elven village.
+Created Branch-> 0x5dfce0c3a710		That one matches tree #0-> 0x5dfce0c3a710			 			: 0x5dfce0c3a710
+Tree # 0 has 5 large branches.	0.0	
+Created Branch-> 0x5dfce0c3a780		That one matches large branch #0.0-> 0x5dfce0c3a780	Deleted branch-> 0x5dfce0c3a710 : 0x5dfce0c3a780
+        Large branch # 0 has 2 middle branches.                 0.0.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3a7f0		That one matches middle branch #0.0.0-> 0x5dfce0c3a7f0	Deleted branch-> 0x5dfce0c3a780 : 0x5dfce0c3a7f0
+                0.0.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3a860		That one matches middle branch #0.0.1-> 0x5dfce0c3a860	Deleted branch-> 0x5dfce0c3a780 : 0x5dfce0c3a860
+        0.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3a8d0		That one matches large branch #0.1-> 0x5dfce0c3a8d0	Deleted branch-> 0x5dfce0c3a710 : 0x5dfce0c3a8d0
+        Large branch # 1 has 2 middle branches.                0.1.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3a920		That one matches middle branch #0.1.0-> 0x5dfce0c3a920	Deleted branch-> 0x5dfce0c3a8d0 : 0x5dfce0c3a920
+                0.1.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3a970		That one matches middle branch #0.1.1-> 0x5dfce0c3a970	Deleted branch-> 0x5dfce0c3a8d0 : 0x5dfce0c3a970
+        0.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3a9e0		That one matches large branch #0.2-> 0x5dfce0c3a9e0	Deleted branch-> 0x5dfce0c3a710 : 0x5dfce0c3a9e0
+        Large branch # 2 has 3 middle branches.                0.2.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3aa60		That one matches middle branch #0.2.0-> 0x5dfce0c3aa60	Deleted branch-> 0x5dfce0c3a9e0 : 0x5dfce0c3aa60
+                0.2.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3aab0		That one matches middle branch #0.2.1-> 0x5dfce0c3aab0	Deleted branch-> 0x5dfce0c3a9e0 : 0x5dfce0c3aab0
+                0.2.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3ab00		That one matches middle branch #0.2.2-> 0x5dfce0c3ab00	Deleted branch-> 0x5dfce0c3a9e0 : 0x5dfce0c3ab00
+        0.3: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3ab80		That one matches large branch #0.3-> 0x5dfce0c3ab80	Deleted branch-> 0x5dfce0c3a710 : 0x5dfce0c3ab80
+        Large branch # 3 has 2 middle branches.                0.3.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3abd0		That one matches middle branch #0.3.0-> 0x5dfce0c3abd0	Deleted branch-> 0x5dfce0c3ab80 : 0x5dfce0c3abd0	
+                0.3.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3ac20		That one matches middle branch #0.3.1-> 0x5dfce0c3ac20	Deleted branch-> 0x5dfce0c3ab80 : 0x5dfce0c3ac20
+        0.4: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3ac70		That one matches large branch #0.4-> 0x5dfce0c3ac70	Deleted branch-> 0x5dfce0c3a710 : 0x5dfce0c3ac70
+        Large branch # 4 has 3 middle branches.                0.4.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3ad10		That one matches middle branch #0.4.0-> 0x5dfce0c3ad10	Deleted branch-> 0x5dfce0c3ac70 : 0x5dfce0c3ad10
+                0.4.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3ad60		That one matches middle branch #0.4.1-> 0x5dfce0c3ad60	Deleted branch-> 0x5dfce0c3ac70 : 0x5dfce0c3ad60
+                0.4.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3add0		That one matches middle branch #0.4.2-> 0x5dfce0c3add0	Deleted branch-> 0x5dfce0c3ac70 : 0x5dfce0c3add0
+Created Branch-> 0x5dfce0c3ae20		That one matches tree #1-> 0x5dfce0c3ae20		Deleted branch-> 0x5dfce0c3a6c0 : 0x5dfce0c3ae20
+Tree # 1 has 3 large branches.        1.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3ae70		That one matches large branch #1.0-> 0x5dfce0c3ae70	Deleted branch-> 0x5dfce0c3ae20 : 0x5dfce0c3ae70
+        Large branch # 0 has 2 middle branches.                1.0.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3aec0		That one matches middle branch #1.0.0-> 0x5dfce0c3aec0	Deleted branch-> 0x5dfce0c3ae70 : 0x5dfce0c3aec0
+                1.0.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3af10		That one matches middle branch #1.0.1-> 0x5dfce0c3af10	Deleted branch-> 0x5dfce0c3ae70 : 0x5dfce0c3af10
+        1.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3af80		That one matches large branch #1.1-> 0x5dfce0c3af80	Deleted branch-> 0x5dfce0c3ae20 : 0x5dfce0c3af80
+        Large branch # 1 has 3 middle branches.                1.1.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3afd0		That one matches middle branch #1.1.0-> 0x5dfce0c3afd0	Deleted branch-> 0x5dfce0c3af80 : 0x5dfce0c3afd0
+                1.1.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b020		That one matches middle branch #1.1.1-> 0x5dfce0c3b020	Deleted branch-> 0x5dfce0c3af80 : 0x5dfce0c3b020
+                1.1.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b090		That one matches middle branch #1.1.2-> 0x5dfce0c3b090	Deleted branch-> 0x5dfce0c3af80 : 0x5dfce0c3b090
+        1.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b110		That one matches large branch #1.2-> 0x5dfce0c3b110	Deleted branch-> 0x5dfce0c3ae20 : 0x5dfce0c3b110
+        Large branch # 2 has 2 middle branches.                1.2.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b190		That one matches middle branch #1.2.0-> 0x5dfce0c3b190	Deleted branch-> 0x5dfce0c3b110 : 0x5dfce0c3b190
+                1.2.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b1e0		That one matches middle branch #1.2.1-> 0x5dfce0c3b1e0	Deleted branch-> 0x5dfce0c3b110 : 0x5dfce0c3b1e0
+Created Branch-> 0x5dfce0c3b230		That one matches tree #2-> 0x5dfce0c3b230		Deleted branch-> 0x5dfce0c3a6c0 : 0x5dfce0c3b230
+Tree # 2 has 4 large branches.        2.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b2b0		That one matches large branch #2.0-> 0x5dfce0c3b2b0	Deleted branch-> 0x5dfce0c3b230 : 0x5dfce0c3b2b0
+        Large branch # 0 has 3 middle branches.                2.0.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b300		That one matches middle branch #2.0.0-> 0x5dfce0c3b300	Deleted branch-> 0x5dfce0c3b2b0 : 0x5dfce0c3b300
+                2.0.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b350		That one matches middle branch #2.0.1-> 0x5dfce0c3b350	Deleted branch-> 0x5dfce0c3b2b0 : 0x5dfce0c3b350
+                2.0.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b3a0		That one matches middle branch #2.0.2-> 0x5dfce0c3b3a0	Deleted branch-> 0x5dfce0c3b2b0 : 0x5dfce0c3b3a0
+        2.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b420		That one matches large branch #2.1-> 0x5dfce0c3b420	Deleted branch-> 0x5dfce0c3b230 : 0x5dfce0c3b420
+        Large branch # 1 has 2 middle branches.                2.1.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b470		That one matches middle branch #2.1.0-> 0x5dfce0c3b470	Deleted branch-> 0x5dfce0c3b420 : 0x5dfce0c3b470
+                2.1.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b4c0		That one matches middle branch #2.1.1-> 0x5dfce0c3b4c0	Deleted branch-> 0x5dfce0c3b420 : 0x5dfce0c3b4c0
+        2.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b510		That one matches large branch #2.2-> 0x5dfce0c3b510	Deleted branch-> 0x5dfce0c3b230 : 0x5dfce0c3b510
+        Large branch # 2 has 2 middle branches.                2.2.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b590		That one matches middle branch #2.2.0-> 0x5dfce0c3b590	Deleted branch-> 0x5dfce0c3b510 : 0x5dfce0c3b590
+                2.2.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b5e0		That one matches middle branch #2.2.1-> 0x5dfce0c3b5e0	Deleted branch-> 0x5dfce0c3b510 : 0x5dfce0c3b5e0
+        2.3: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b630		That one matches large branch #2.3-> 0x5dfce0c3b630	Deleted branch-> 0x5dfce0c3b230 : 0x5dfce0c3b630
+        Large branch # 3 has 3 middle branches.                2.3.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b680		That one matches middle branch #2.3.0-> 0x5dfce0c3b680	Deleted branch-> 0x5dfce0c3b630 : 0x5dfce0c3b680
+                2.3.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b6d0		That one matches middle branch #2.3.1-> 0x5dfce0c3b6d0	Deleted branch-> 0x5dfce0c3b630 : 0x5dfce0c3b6d0
+                2.3.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b740		That one matches middle branch #2.3.2-> 0x5dfce0c3b740	Deleted branch-> 0x5dfce0c3b630 : 0x5dfce0c3b740
+Created Branch-> 0x5dfce0c3b7c0		That one matches tree #3-> 0x5dfce0c3b7c0		Deleted branch-> 0x5dfce0c3a6c0 : 0x5dfce0c3b7c0
+Tree # 3 has 3 large branches.        3.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b810		That one matches large branch #3.0-> 0x5dfce0c3b810	Deleted branch-> 0x5dfce0c3b7c0 : 0x5dfce0c3b810
+        Large branch # 0 has 3 middle branches.                3.0.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b860		That one matches middle branch #3.0.0-> 0x5dfce0c3b860	Deleted branch-> 0x5dfce0c3b810 : 0x5dfce0c3b860
+                3.0.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b8b0		That one matches middle branch #3.0.1-> 0x5dfce0c3b8b0	Deleted branch-> 0x5dfce0c3b810 : 0x5dfce0c3b8b0
+                3.0.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b920		That one matches middle branch #3.0.2-> 0x5dfce0c3b920	Deleted branch-> 0x5dfce0c3b810 : 0x5dfce0c3b920
+        3.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b9a0		That one matches large branch #3.1-> 0x5dfce0c3b9a0	Deleted branch-> 0x5dfce0c3b7c0 : 0x5dfce0c3b9a0
+        Large branch # 1 has 2 middle branches.                3.1.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3b9f0		That one matches middle branch #3.1.0-> 0x5dfce0c3b9f0	Deleted branch-> 0x5dfce0c3b9a0 : 0x5dfce0c3b9f0
+                3.1.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3ba40		That one matches middle branch #3.1.1-> 0x5dfce0c3ba40	Deleted branch-> 0x5dfce0c3b9a0 : 0x5dfce0c3ba40
+        3.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3ba90		That one matches large branch #3.2-> 0x5dfce0c3ba90	Deleted branch-> 0x5dfce0c3b7c0 : 0x5dfce0c3ba90
+        Large branch # 2 has 2 middle branches.                3.2.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bb10		That one matches middle branch #3.2.0-> 0x5dfce0c3bb10	Deleted branch-> 0x5dfce0c3ba90 : 0x5dfce0c3bb10
+                3.2.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bb60		That one matches middle branch #3.2.1-> 0x5dfce0c3bb60	Deleted branch-> 0x5dfce0c3ba90 : 0x5dfce0c3bb60
+Created Branch-> 0x5dfce0c3bbb0		That one matches tree #4-> 0x5dfce0c3bbb0		Deleted branch-> 0x5dfce0c3a6c0 : 0x5dfce0c3bbb0
+Tree # 4 has 5 large branches.        4.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bc50		That one matches large branch #4.0-> 0x5dfce0c3bc50	Deleted branch-> 0x5dfce0c3bbb0 : 0x5dfce0c3bc50
+        Large branch # 0 has 3 middle branches.                4.0.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bca0		That one matches middle branch #4.0.0-> 0x5dfce0c3bca0	Deleted branch-> 0x5dfce0c3bc50 : 0x5dfce0c3bca0
+                4.0.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bd10		That one matches middle branch #4.0.1-> 0x5dfce0c3bd10	Deleted branch-> 0x5dfce0c3bc50 : 0x5dfce0c3bd10
+                4.0.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bd80		That one matches middle branch #4.0.2-> 0x5dfce0c3bd80 Deleted branch-> 0x5dfce0c3bc50 : 0x5dfce0c3bd80
+        4.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bdd0		That one matches large branch #4.1-> 0x5dfce0c3bdd0	Deleted branch-> 0x5dfce0c3bbb0 : 0x5dfce0c3bdd0
+        Large branch # 1 has 2 middle branches.                4.1.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3be20		That one matches middle branch #4.1.0-> 0x5dfce0c3be20	Deleted branch-> 0x5dfce0c3bdd0 : 0x5dfce0c3be20
+                4.1.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3be70		That one matches middle branch #4.1.1-> 0x5dfce0c3be70	Deleted branch-> 0x5dfce0c3bdd0 : 0x5dfce0c3be70
+        4.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bec0		That one matches large branch #4.2-> 0x5dfce0c3bec0	Deleted branch-> 0x5dfce0c3bbb0 : 0x5dfce0c3bec0
+        Large branch # 2 has 3 middle branches.                4.2.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bf40		That one matches middle branch #4.2.0-> 0x5dfce0c3bf40	Deleted branch-> 0x5dfce0c3bec0 : 0x5dfce0c3bf40
+                4.2.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bf90		That one matches middle branch #4.2.1-> 0x5dfce0c3bf90	Deleted branch-> 0x5dfce0c3bec0 : 0x5dfce0c3bf90
+                4.2.2: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3bfe0		That one matches middle branch #4.2.2-> 0x5dfce0c3bfe0	Deleted branch-> 0x5dfce0c3bec0 : 0x5dfce0c3bfe0
+        4.3: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3c060		That one matches large branch #4.3-> 0x5dfce0c3c060	Deleted branch-> 0x5dfce0c3bbb0 : 0x5dfce0c3c060
+        Large branch # 3 has 2 middle branches.                4.3.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3c0b0		That one matches middle branch #4.3.0-> 0x5dfce0c3c0b0	Deleted branch-> 0x5dfce0c3c060 : 0x5dfce0c3c0b0
+                4.3.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3c100		That one matches middle branch #4.3.1-> 0x5dfce0c3c100	Deleted branch-> 0x5dfce0c3c060 : 0x5dfce0c3c100
+        4.4: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3c150		That one matches large branch #4.4-> 0x5dfce0c3c150	Deleted branch-> 0x5dfce0c3bbb0 : 0x5dfce0c3c150
+        Large branch # 4 has 2 middle branches.                4.4.0: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3c1f0		That one matches middle branch #4.4.0-> 0x5dfce0c3c1f0	Deleted branch-> 0x5dfce0c3c150 : 0x5dfce0c3c1f0
+                4.4.1: What is the elf's name?--> 
+Created Branch-> 0x5dfce0c3c240		That one matches middle branch #4.4.1-> 0x5dfce0c3c240	Deleted branch-> 0x5dfce0c3c150 : 0x5dfce0c3c240
+==================================================================================================================================================
+

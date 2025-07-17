@@ -3,15 +3,13 @@
 #include <iostream>
 #include <limits>
  
-void ignoreLine()
-{
+void ignoreLine() {
   std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
  
-double getDouble()
-{
-    while (true) // Цикл, пока пользователь не введет допустимые данные
-    {
+double getDouble() {
+    while (true) { // Цикл, пока пользователь не введет допустимые данные
+    
         std::cout << "Enter a double value: ";
         double x{};
         std::cin >> x;
@@ -35,10 +33,9 @@ double getDouble()
     }
 }
  
-char getOperator()
-{
-    while (true) // Цикл, пока пользователь не введет допустимые данные
-    {
+char getOperator() {
+    while (true) { // Цикл, пока пользователь не введет допустимые данные
+    
         std::cout << "Enter one of the following: +, -, *, or /: ";
         char operation{};
         std::cin >> operation;
@@ -58,8 +55,7 @@ char getOperator()
     } // и попробуем еще раз
 }
  
-void printResult(double x, char operation, double y)
-{
+void printResult(double x, char operation, double y) {
     switch (operation)
     {
     case '+':
@@ -81,8 +77,7 @@ void printResult(double x, char operation, double y)
     }
 }
  
-int main()
-{
+int main() {
     double x{ getDouble() };
     char operation{ getOperator() };
     double y{ getDouble() };

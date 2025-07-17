@@ -6,3 +6,9 @@ main
 *~
 logs/
 .vscode/
+data/
+nptl/
+tmp*
+build
+data
+bin
