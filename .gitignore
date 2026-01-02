@@ -12,3 +12,4 @@ tmp*
 build
 data
 bin
+json/
