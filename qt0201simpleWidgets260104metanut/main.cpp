@@ -1,3 +1,5 @@
+// https://metanit.com/cpp/qt/1.5.php
+
 //#include <QCoreApplication>
 #include <QApplication>
 #include <QWidget>
@@ -39,8 +41,8 @@ int main(int argc, char *argv[])
     QLabel label{&widget};      // создаем текстовую метку и передаём указатель на виджет, который представляет контейнер и в который будет добавляться метка. То есть в данном случае метка добавляется в контейнер widget.
     label.setText("Hello METANIT.COM"); // установка текста метки
 
-    QLabel label2{&widget};
-    label2.setText("**************************************************************");
+    //QLabel label2{&widget};
+    //label2.setText("                                 **************************************************************");
 
     widget.show();                // отображаем виджет
 
