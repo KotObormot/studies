@@ -12,5 +12,11 @@ tmp*
 build
 data
 bin
-json/
+*.bin
+nlohmann_json
+.git/
+*.exe
+*.code-workspace
+*.png
 .qtcreator/
+json/
