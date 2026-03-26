@@ -1,5 +1,5 @@
 #include <QCoreApplication>
-#include <QTextStream>
+//#include <QTextStream>
 
 int main(int argc, char *argv[])
 {
@@ -18,7 +18,18 @@ int main(int argc, char *argv[])
     QTextStream out(stdout);
     QString str = "love";
 
+    str.append(" chess!");
+    str.prepend("I ");
+
     out << str << Qt::endl;
 
+    out << "1) The string has " << str.count() << " characters.\n";
+    out << "2) The string has " << str.size() << " characters.\n";
+    out << "3) The string has " << str.length() << " characters.\n";
+
+    out << str.toUpper() << Qt::endl;
+    out << str.toLower() << "\n";
+
+    out << Qt::endl;
     return a.exec();
 }
