@@ -22,10 +22,10 @@ int main(int argc, char *argv[])
     QString str3 = "Eagle ";
     QString str4 = "Орёл";
 
-    out << str1 << "; " << str1.size() << " = " << str1.count() << " = " << str1.length() << Qt::endl
-        << str2 << "; " << str2.size() << " = " << str2.count() << " = " << str2.length() << Qt::endl
-        << str3 << "; " << str3.size() << " = " << str3.count() << " = " << str3.length() << Qt::endl
-        << str4 << "; " << str4.size() << " = " << str4.count() << " = " << str4.length() << Qt::endl;
+    out << str1 << "; " << str1.size() << " == " << str1.count() << " == " << str1.length() << Qt::endl
+        << str2 << "; " << str2.size() << " == " << str2.count() << " == " << str2.length() << Qt::endl
+        << str3 << "; " << str3.size() << " == " << str3.count() << " == " << str3.length() << Qt::endl
+        << str4 << "; " << str4.size() << " == " << str4.count() << " == " << str4.length() << Qt::endl;
 
 
     return a.exec();
