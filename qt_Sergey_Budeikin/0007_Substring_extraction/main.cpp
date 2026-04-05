@@ -1,7 +1,7 @@
 #include <QCoreApplication>
 #include <QTextStream>
-//#include <QStringView>
-#include <QStringRef>
+#include <QStringView>
+//#include <QStringRef> В Qt 6 класс QStringRef был удален. Вместо него теперь следует использовать QStringView.
 
 int main(int argc, char *argv[])
 {
@@ -33,8 +33,15 @@ int main(int argc, char *argv[])
     ////////////////////////////////////
     QString str2("The big apple");
     out << str2 << Qt::endl;
-    QStringRef substr2(&str2, 2, 15);
-    out << substr2.toString() << Qt::endl;
+//    QStringRef substr2(&str2, 2, 15);
+    QStringView subLstr2 = QStringView(str2).left(4);
+    QStringView subMstr2 = QStringView(str2).mid(4, 15);
+    QStringView subRstr2(QStringView(str2).right(6));
+
+    out << subLstr2.toString()
+        << subMstr2.toString()
+        << subRstr2.toString()
+        << Qt::endl;
 
     return a.exec();
 }
