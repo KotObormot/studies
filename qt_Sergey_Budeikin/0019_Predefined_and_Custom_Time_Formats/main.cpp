@@ -5,6 +5,7 @@
 #include <QLocale>
 #include <QTimeZone>
 #include <QDateTime>
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
@@ -53,6 +54,7 @@ int main(int argc, char *argv[])
     // Проверка: какая спецификация у объекта?
     if (nowUtc.timeSpec() == Qt::UTC) {
         // Этот объект хранит время без привязки к локальным часовым поясам
+        //qDebug() << "This is UTC time." << Qt::endl;
     }
 
     QDateTime local = QDateTime::currentDateTime(); // Местное время (например, RTZ 6)
@@ -62,9 +64,18 @@ int main(int argc, char *argv[])
     QString s = utc.toString(Qt::ISODate);
     out << "9) " << "Current UTC is " << s << Qt::endl;
 
+    //не текущее время, а хранимое :
     QString storedString = "2023-10-27T14:30:05Z";
     QDateTime storedDateTime = QDateTime::fromString(storedString, Qt::ISODate);
     // Qt поймет 'Z' в конце строки и установит спецификацию Qt::UTC автоматически
+
+    // Проверка: какая спецификация у объекта?
+    if(storedDateTime.timeSpec() != Qt::UTC) {
+        qDebug() << "This isn't UTC time " << Qt::endl;
+        storedDateTime = storedDateTime.toUTC();
+        //storedDateTime.setTimeSpec(Qt::UTC);
+        qDebug() << "Now this is UTC time" << Qt::endl;
+    }
 
     out << "10) " << "Stored time is " << QLocale("en_EN").toString(storedDateTime, QLocale::LongFormat) << Qt::endl;
 
