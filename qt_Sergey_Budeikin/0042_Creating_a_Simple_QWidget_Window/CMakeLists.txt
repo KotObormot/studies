@@ -89,7 +89,8 @@ if(UNIX AND NOT APPLE)
         "Type=Application\n"
         "Name=Simple QWidget (Debug)\n"
         "Exec=$<TARGET_FILE:${TARGET_NAME}>\n" # Теперь это безопасно, так как ниже идет GENERATE
-        "Icon=/home/itsme/studies/qt_Sergey_Budeikin/0042_Creating_a_Simple_QWidget_Window/icon/web.png\n"
+        "Icon=${CMAKE_CURRENT_SOURCE_DIR}/icon/web.png\n"
+        #"Icon=/home/itsme/studies/qt_Sergey_Budeikin/0042_Creating_a_Simple_QWidget_Window/icon/web.png\n"
         "Terminal=false\n"
         "StartupWMClass=${WM_CLASS}\n"
     )
