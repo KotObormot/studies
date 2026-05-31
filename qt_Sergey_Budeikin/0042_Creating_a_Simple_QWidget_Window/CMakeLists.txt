@@ -73,35 +73,37 @@ endif()
 
 ################################################################################
 # Автоматическое создание ярлыка для Wayland во время сборки (только для Linux)
-# Проверяем, что сборка идет под Linux
 if(UNIX AND NOT APPLE)
-    # Название вашего исполняемого таргета (замените my_executable на имя вашей программы в add_executable )
-    # Сюда пишем имя из add_executable(имя_таргета ...)
+    # Название вашего исполняемого таргета из add_executable
     set(TARGET_NAME 0042_Creating_a_Simple_QWidget_Window)
 
-    # Имя .desktop файла (должно строго совпадать с app.setDesktopFileName в main.cpp)
-    # Сюда пишем то, что у вас указано в OUTPUT_NAME
+    # Имя WM_CLASS и .desktop файла
     set(WM_CLASS "simple_qwidget")
 
+    # Сначала готовим шаблон текста (без генератора путей в file WRITE)
+    set(DESKTOP_FILE_TEMPLATE "${CMAKE_CURRENT_BINARY_DIR}/${WM_CLASS}.desktop.in")
     set(DESKTOP_FILE_PATH "${CMAKE_CURRENT_BINARY_DIR}/${WM_CLASS}.desktop")
 
-    # Генерируем содержимое ярлыка с абсолютными путями
-    file(WRITE ${DESKTOP_FILE_PATH}
+    file(WRITE ${DESKTOP_FILE_TEMPLATE}
         "[Desktop Entry]\n"
         "Type=Application\n"
         "Name=Simple QWidget (Debug)\n"
-        #"Name=Simple QWidget (Debug)\n"
-        "Exec=$<TARGET_FILE:${TARGET_NAME}>\n"   # CMake сам подставит правильный путь с учетом OUTPUT_NAME
-        #"Icon=${CMAKE_CURRENT_SOURCE_DIR}/icon/web.png\n" # Укажите точный путь к исходному PNG файлу на диске
-        "Icon=/home/itsme/studies/qt_Sergey_Budeikin/0042_Creating_a_Simple_QWidget_Window/icon/web.png\n" # Укажите точный путь к исходному PNG файлу на диске
+        "Exec=$<TARGET_FILE:${TARGET_NAME}>\n" # Теперь это безопасно, так как ниже идет GENERATE
+        "Icon=/home/itsme/studies/qt_Sergey_Budeikin/0042_Creating_a_Simple_QWidget_Window/icon/web.png\n"
         "Terminal=false\n"
-        "StartupWMClass=${WM_CLASS}\n"  # Должно совпадать с OUTPUT_NAME
+        "StartupWMClass=${WM_CLASS}\n"
     )
 
-    # Автоматически копируем ярлык в локальную папку пользователя после сборки таргета
+    # ВАЖНО: file(GENERATE) заставит CMake правильно раскрыть $<TARGET_FILE:...>
+    file(GENERATE
+        OUTPUT "${DESKTOP_FILE_PATH}"
+        INPUT "${DESKTOP_FILE_TEMPLATE}"
+    )
+
+    # Автоматически копируем уже готовый и раскрытый ярлык в локальную папку пользователя после сборки
     add_custom_command(TARGET ${TARGET_NAME} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy "${DESKTOP_FILE_PATH}" "$ENV{HOME}/.local/share/applications/"
-        COMMENT "Копирование .desktop файла для поддержки иконок в Wayland..."
+        COMMENT "Копирование раскрытого .desktop файла для поддержки иконок в Wayland..."
     )
 endif()
 ################################################################################
