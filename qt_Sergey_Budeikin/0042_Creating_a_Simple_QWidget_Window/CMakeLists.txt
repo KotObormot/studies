@@ -1,5 +1,3 @@
-# Вот содержимое CMakeLists.txt
-
 cmake_minimum_required(VERSION 3.16)
 
 project(0042_Creating_a_Simple_QWidget_Window VERSION 0.1 LANGUAGES CXX)
@@ -53,6 +51,7 @@ if(${QT_VERSION} VERSION_LESS 6.1.0)
   set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.0042_Creating_a_Simple_QWidget_Window)
 endif()
 set_target_properties(0042_Creating_a_Simple_QWidget_Window PROPERTIES
+    # Надо чтобы испоняемый файл назывался simple_qwidget (проект на Ubuntu)
     OUTPUT_NAME "simple_qwidget"  # <- ДОБАВЬТЕ ЭТУ СТРОКУ
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
@@ -72,4 +71,37 @@ if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(0042_Creating_a_Simple_QWidget_Window)
 endif()
 
-# Надо чтобы испоняемый файл назывался simple_qwidget (проект на Ubuntu)
+################################################################################
+# Автоматическое создание ярлыка для Wayland во время сборки (только для Linux)
+# Проверяем, что сборка идет под Linux
+if(UNIX AND NOT APPLE)
+    # Название вашего исполняемого таргета (замените my_executable на имя вашей программы в add_executable )
+    # Сюда пишем имя из add_executable(имя_таргета ...)
+    set(TARGET_NAME 0042_Creating_a_Simple_QWidget_Window)
+
+    # Имя .desktop файла (должно строго совпадать с app.setDesktopFileName в main.cpp)
+    # Сюда пишем то, что у вас указано в OUTPUT_NAME
+    set(WM_CLASS "simple_qwidget")
+
+    set(DESKTOP_FILE_PATH "${CMAKE_CURRENT_BINARY_DIR}/${WM_CLASS}.desktop")
+
+    # Генерируем содержимое ярлыка с абсолютными путями
+    file(WRITE ${DESKTOP_FILE_PATH}
+        "[Desktop Entry]\n"
+        "Type=Application\n"
+        "Name=Simple QWidget (Debug)\n"
+        #"Name=Simple QWidget (Debug)\n"
+        "Exec=$<TARGET_FILE:${TARGET_NAME}>\n"   # CMake сам подставит правильный путь с учетом OUTPUT_NAME
+        #"Icon=${CMAKE_CURRENT_SOURCE_DIR}/icon/web.png\n" # Укажите точный путь к исходному PNG файлу на диске
+        "Icon=/home/itsme/studies/qt_Sergey_Budeikin/0042_Creating_a_Simple_QWidget_Window/icon/web.png\n" # Укажите точный путь к исходному PNG файлу на диске
+        "Terminal=false\n"
+        "StartupWMClass=${WM_CLASS}\n"  # Должно совпадать с OUTPUT_NAME
+    )
+
+    # Автоматически копируем ярлык в локальную папку пользователя после сборки таргета
+    add_custom_command(TARGET ${TARGET_NAME} POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy "${DESKTOP_FILE_PATH}" "$ENV{HOME}/.local/share/applications/"
+        COMMENT "Копирование .desktop файла для поддержки иконок в Wayland..."
+    )
+endif()
+################################################################################
