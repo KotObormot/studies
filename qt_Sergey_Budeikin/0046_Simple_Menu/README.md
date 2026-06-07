@@ -1,4 +1,4 @@
-2026-06-04 0046 Создание простейшего меню / 0046 Creating a simple menu
+2026-06-04...2026-05-07 0046 Создание простейшего меню / 0046 Creating a simple menu 
 
 https://www.youtube.com/watch?v=SbNvb82tdsQ&list=PL0-ON4z3RPUO-BMP4L-9UvG2ADmMWhW24
 
