@@ -44,7 +44,7 @@ See also https://ravesli.com/urok-8-upravlenie-komponovkoj-vidzhetov-v-qt5/#toc-
 Здесь мы создаем виджет QTextEdit и вручную размещаем его. Метод setGeometry() выполняет две функции: позиционирует виджет в абсолютных координатах и изменяет его размер.
 
 
-P.s. <QDesktopWidget> был полностью удален из библиотеки. В Qt 5 он считался устаревшим (deprecated), а при переходе на Qt 6 разработчики окончательно убрали его из состава модуля QtWidgets. Для работы с экранами, их размерами и геометрией теперь нужно использовать класс QScreen совместно с QGuiApplication.
+P.s. QDesktopWidget был полностью удален из библиотеки. В Qt 5 он считался устаревшим (deprecated), а при переходе на Qt 6 разработчики окончательно убрали его из состава модуля QtWidgets. Для работы с экранами, их размерами и геометрией теперь нужно использовать класс QScreen совместно с QGuiApplication.
 
 
 / 
@@ -85,5 +85,5 @@ Let's look at an example that uses the setGeometry() method to place a widget in
 
 Here, we create a QTextEdit widget and manually place it. The setGeometry() method performs two functions: it positions the widget using absolute coordinates and resizes it.
 
-P.s. <QDesktopWidget> has been completely removed from the library. In Qt 5, it was deprecated, and with the transition to Qt 6, the developers finally removed it from the QtWidgets module. To work with screens, their sizes, and geometry, you now need to use the QScreen class in conjunction with QGuiApplication.
+P.s. QDesktopWidget has been completely removed from the library. In Qt 5, it was deprecated, and with the transition to Qt 6, the developers finally removed it from the QtWidgets module. To work with screens, their sizes, and geometry, you now need to use the QScreen class in conjunction with QGuiApplication.
 
