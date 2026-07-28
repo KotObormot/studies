@@ -18,5 +18,7 @@ nlohmann_json
 *.exe
 *.code-workspace
 *.png
+*.jpg
+*.jpeg
 .qtcreator/
 json/
