@@ -1,4 +1,4 @@
-### 2026-08-02
+### 2026-01-26
 
 ##### https://ravesli.com/uroki-po-qt5/
 
@@ -23,5 +23,17 @@ Qt5 is dual-licensed, meaning it can be used for non-commercial purposes to crea
 In these lessons, we will not only understand the basic concepts of Qt5 but also create several games using C++ and Qt5.
 
 ##### https://ravesli.com/uroki-po-qt5/
+
+----
+
+#### See also http://zetcode.com/gui/qt5/
+
+----
+
+#### See also https://www.youtube.com/playlist?list=PL0-ON4z3RPUO-BMP4L-9UvG2ADmMWhW24
+
+# Qt Начало / Сергей Будейкин / Курс / Qt Home / Sergey Budeykin / Course
+
+74 видео Обновлен 3 авг. 2022 г. / 74 videos Updated August 3, 2022
 
 # ẞ
