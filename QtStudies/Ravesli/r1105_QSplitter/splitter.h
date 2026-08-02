@@ -1,13 +1,14 @@
+#pragma once
+
 #ifndef SPLITTER_H
 #define SPLITTER_H
 
 #include <QWidget>
 
-class Splitter : public QWidget
-{
+class Splitter : public QWidget {
     Q_OBJECT
 
-public:
+  public:
     Splitter(QWidget *parent = nullptr);
     ~Splitter();
 };
