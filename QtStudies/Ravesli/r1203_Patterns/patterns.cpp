@@ -15,34 +15,47 @@ void Patterns::doPainting() {
 
     QPainter painter(this);
     //painter.setPen(Qt::NoPen);
-    painter.setPen(QColor("#ff0000"));      // red color of the frame
-
+//////////////////////////////////////////////////////////////////////////////// 1
     // Создаем прямоугольник с определенным рисунком.
     // Qt::HorPattern — это константа, используемая для создания шаблона горизонтальных линий:
     //painter.setBrush(Qt::HorPattern);
-    // как переписать код, чтобы в нарисованном прямогульнике был узор на фоне белого цвета?Qt6
-    //painter.setBrush(QBrush("#ffffff"));    // white
-    // В вашем текущем коде вторая строка просто полностью перезаписывает первую.
+
+    //QPen pen(QColor("#0000ff"), 3); // Настройка рамки (толщина 3 пикселя, синий цвет)
+    QPen pen1(QColor("blue"), 3);
+    painter.setPen(pen1);
+
+    // 2. Настройка белого фона под узором
+    painter.setBackgroundMode(Qt::OpaqueMode); // Включаем видимость фона под текстурой
+    painter.setBackground(QBrush(Qt::white));  // Задаем белый цвет фона
 
     // Чтобы внутри прямоугольника одновременно отображался узор и белый цвет фона, вам нужно настроить оба свойства в одном объекте QBrush.
     // Var. 1:
-    /*QBrush brush(QColor("#ffffff"), Qt::HorPattern);    // Конструктор QBrush: Принимает сразу два параметра — цвет (QColor) и стиль заполнения (Qt::BrushStyle).
+    QBrush brush(QColor("#f44336"), Qt::HorPattern);    // Конструктор QBrush: Принимает сразу два параметра — цвет (QColor white) и стиль заполнения (Qt::BrushStyle).
     painter.setBrush(brush);    // Цвет самого узора (линий) в данном случае будет браться из текущего пера painter.pen().
-    */
 
+    painter.drawRect(10, 15, 90, 60);
+///////////////////////////////////////////////////////////////////////////////////// 2
     // Var. 2
     // Если вы хотите полностью контролировать цвет линий узора и цвет фона под узором, можно использовать альтернативный вариант с настройкой палитры brush:
-    QBrush brush(Qt::HorPattern);
-    brush.setColor(Qt::yellow);
-    painter.setBrush(brush);
-    painter.drawRect(10, 15, 90, 60);
+    //QBrush brush(Qt::HorPattern);
+    //brush.setColor(Qt::yellow);
+    //painter.setBrush(brush);
 
+    QPen pen2(QColor("green"), 5);
+    painter.setPen(pen2);
+    painter.setBackground(QBrush("yellow"));
     painter.setBrush(Qt::VerPattern);
     painter.drawRect(130, 15, 90, 60);
 
+//////////////////////////////////////////////////////////////////////////////////////// 3
+    QPen pen3(QColor("purple"), 5);
+    painter.setPen(pen3);
+
     painter.setBrush(Qt::CrossPattern);
     painter.drawRect(250, 15, 90, 60);
-
+//////////////////////////////////////////////////////////////////////////////////////// 4
+    painter.setPen(pen1);
+    painter.setBackground(QColor("white"));
     painter.setBrush(Qt::Dense7Pattern);
     painter.drawRect(10, 105, 90, 60);
 
