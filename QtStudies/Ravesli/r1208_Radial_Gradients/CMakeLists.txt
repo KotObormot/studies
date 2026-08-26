@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(r1208_Radial_Gradients VERSION 0.1 LANGUAGES CXX)
+project(r1208_Radial_Gradients VERSION 1.3 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)

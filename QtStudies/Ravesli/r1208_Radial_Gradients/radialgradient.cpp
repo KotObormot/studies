@@ -1,5 +1,4 @@
 #include "radialgradient.h"
-#include <cmath>
 
 RadialGradient::RadialGradient(QWidget *parent) : QWidget(parent) {
     m_gradRad.setCoordinateMode(QGradient::ObjectMode);
@@ -40,7 +39,9 @@ void RadialGradient::paintEvent([[maybe_unused]] QPaintEvent *e) {
     QPainter painter(this);
 
     // Включаем сглаживание, чтобы круги отрисовывались плавно и красиво
+    // v.1.3. // Включаем сглаживание как для графики, так и для текста
     painter.setRenderHint(QPainter::Antialiasing);
+    painter.setRenderHint(QPainter::TextAntialiasing);      // Этот флаг убирает «лесенку» по краям букв, делая текст идеально гладким.
 
     // вместо смещения стартовых точек мы будем плавно изменять радиус окружности.
     // Динамически меняем базовый радиус (например, от 0.1 до 1.1)
@@ -49,6 +50,24 @@ void RadialGradient::paintEvent([[maybe_unused]] QPaintEvent *e) {
 
     // 4. Отрисовка на весь экран
     painter.fillRect(0, 0, this->width(), this->height(), m_gradRad);
+
+    // v.1.3 // 2. Настройка шрифта
+    QFont font("Arial", 16, QFont::Bold);           // Установили красивый, жирный шрифт Arial.
+    painter.setFont(font);
+
+    // Сделаем текст белым, чтобы он выделялся
+    painter.setPen(Qt::white);
+
+    // 3. Форматируем строку со значением скорости
+    // Умножаем на 1000 для наглядности (чтобы видеть целые числа вместо 0.005)
+    // Форматирует вывод переменной m_speed, округляя её до одного знака после запятой ('f', 1), чтобы цифры на экране не мерцали из-за длинного хвоста дроби.
+    QString speedText = QString("Speed: %1").arg(m_speed * 1000, 0, 'f', 1);
+
+    // 4. Отрисовка текста в левом верхнем углу с небольшим отступом (20 пикселей)
+    painter.drawText(20, 40, speedText);
+
+    // Альтернативный вариант: если захотите отцентрировать текст строго по центру окна:
+    // painter.drawText(this->rect(), Qt::AlignCenter, speedText);
 }
 
 // Новый метод: перехватывает вращение колесика мыши
