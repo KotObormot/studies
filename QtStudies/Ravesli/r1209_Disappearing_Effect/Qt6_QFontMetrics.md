@@ -1,6 +1,6 @@
 # Как исправить в Qt6 ошибку no member 'width' in 'QFontMetrics'
 
-- [AI] (https://share.google/aimode/5Knshs9U2ZFxUKvzR)
+- [AI](https://share.google/aimode/5Knshs9U2ZFxUKvzR)
 
 Чтобы исправить ошибку no member 'width' in 'QFontMetrics' в Qt6, вам нужно заменить устаревший метод width() на horizontalAdvance().
 
