@@ -1,6 +1,8 @@
 # Как исправить в Qt6 ошибку no member 'width' in 'QFontMetrics'
 
 - [AI](https://share.google/aimode/5Knshs9U2ZFxUKvzR)
+- [AI](https://share.google/aimode/2GsinOexEpPKRXSOF)
+
 
 Чтобы исправить ошибку no member 'width' in 'QFontMetrics' в Qt6, вам нужно заменить устаревший метод width() на horizontalAdvance().
 
@@ -26,6 +28,23 @@
 
     // Возвращает точную ширину прямоугольника, в который вписан текстint 
     w = fontMetrics.boundingRect("Ваш текст").width();
+
+## Bместо  `int w = metrics.width(num[i - 1]);`  
+
+
+правильно переписать:
+
+    int w = metrics.horizontalAdvance(num[i - 1]);
+    
+### Дополнительные варианты (в зависимости от типа данных)
+Если `num[i - 1]` — это:
+
+* `QString` или `QChar`: используйте `metrics.horizontalAdvance(...)`.
+* Дробная точность: если вам нужна максимальная точность для верстки (особенно на High-DPI экранах), используйте `QFontMetricsF` вместо `QFontMetrics` и метод `horizontalAdvance()`, который вернет `qreal (double)`:
+
+    `qreal w = metrics.horizontalAdvance(num[i - 1]);`
+
+
 
 
 ------------------------------

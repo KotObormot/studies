@@ -25,7 +25,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         README.md
         widget.h
         widget.cpp
-        Qt6_instead_metrics_width.md
+
         Qt6_QFontMetrics.md Qt6_Proper_Memory_Management.md Qt6_about_q_unused.md Qt6_about_QDesktopWidget.md
 
     )
