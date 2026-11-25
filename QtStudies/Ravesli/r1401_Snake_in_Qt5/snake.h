@@ -29,7 +29,7 @@ class Snake : public QWidget
     static const int DOT_SIZE = 10;     // размеры яблока и «частей» тела змеи
     static const int ALL_DOTS = 900;    // максимальное количество возможных точек на доске (900 = (300*300)/(10*10)).
     static const int RAND_POS = 29;     // используется для вычисления случайной позиции яблока
-    static const int DELAY = 140;       // определяет скорость игры
+    static const int DELAY = 140/*280*/;       // определяет скорость игры
 
     int timerID;
     int dots;
